@@ -1,42 +1,25 @@
-import { careTypes } from "@/data/care-types";
-import { lifeHereSections } from "@/data/life-here";
-import { resourcePages } from "@/data/resources-pages";
-import { blogPosts } from "@/data/blog-posts";
 import type { MetadataRoute } from "next";
 
-const BASE_URL = process.env.SITE_URL ?? "https://example.com";
+export const dynamic = "force-static";
+
+const BASE_URL = process.env.SITE_URL ?? "https://sydneysselfstorage.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = [
-    "",
-    "/about",
-    "/about/our-team",
-    "/contact",
-    "/schedule-tour",
-    "/pricing",
-    "/living-options",
-    "/life-here",
-    "/resources",
-    "/resources/blog",
-  ];
+  const pages = [
+    { path: "", priority: 1.0, freq: "weekly" },
+    { path: "/facility", priority: 0.9, freq: "weekly" },
+    { path: "/size-guide", priority: 0.8, freq: "monthly" },
+    { path: "/storage-in-overland-park", priority: 0.8, freq: "monthly" },
+    { path: "/storage-in-kansas", priority: 0.8, freq: "monthly" },
+    { path: "/blog", priority: 0.7, freq: "weekly" },
+    { path: "/about", priority: 0.6, freq: "monthly" },
+    { path: "/contact", priority: 0.7, freq: "monthly" },
+  ] as const;
 
-  const careTypePages = careTypes.map((ct) => `/living-options/${ct.slug}`);
-  const lifeHerePages = lifeHereSections.map((s) => `/life-here/${s.slug}`);
-  const resourceSubPages = resourcePages.map((r) => `/resources/${r.slug}`);
-  const blogPages = blogPosts.map((p) => `/resources/blog/${p.slug}`);
-
-  const allPages = [
-    ...staticPages,
-    ...careTypePages,
-    ...lifeHerePages,
-    ...resourceSubPages,
-    ...blogPages,
-  ];
-
-  return allPages.map((path) => ({
+  return pages.map(({ path, priority, freq }) => ({
     url: `${BASE_URL}${path}`,
     lastModified: new Date(),
-    changeFrequency: path === "" ? "weekly" : "monthly",
-    priority: path === "" ? 1.0 : path.split("/").length <= 2 ? 0.8 : 0.6,
+    changeFrequency: freq as MetadataRoute.Sitemap[number]["changeFrequency"],
+    priority,
   }));
 }
