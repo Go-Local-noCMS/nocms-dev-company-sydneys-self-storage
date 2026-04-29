@@ -16,87 +16,64 @@ export interface SocialLink {
 }
 
 export const navigationLinks: NavLink[] = [
+  { label: "Home", href: "/" },
   {
-    label: "About Us",
-    href: "/about",
+    label: "Storage Units",
+    href: "/facility",
     children: [
-      { label: "Mission & History", href: "/about", description: "Our story and values" },
-      { label: "Our Team", href: "/about/our-team", description: "Meet our compassionate staff" },
-      { label: "Testimonials", href: "/#testimonials", description: "Hear from families" },
+      { label: "View All Units", href: "/facility", description: "Browse available sizes & pricing" },
+      { label: "Size Guide", href: "/size-guide", description: "Find the right unit for you" },
+      { label: "Climate Control", href: "/facility#climate", description: "Why climate control matters" },
     ],
   },
   {
-    label: "Living Options",
-    href: "/living-options",
+    label: "Locations",
+    href: "/locations",
     children: [
-      { label: "Overview & Comparison", href: "/living-options", description: "Find the right fit" },
-      { label: "Independent Living", href: "/living-options/independent-living", description: "Active lifestyle with freedom" },
-      { label: "Assisted Living", href: "/living-options/assisted-living", description: "Compassionate daily support" },
-      { label: "Memory Care", href: "/living-options/memory-care", description: "Expert dementia care" },
-      { label: "Respite Care", href: "/living-options/respite-care", description: "Short-term stays" },
-      { label: "Floor Plans & Pricing", href: "/pricing", description: "Transparent pricing" },
+      { label: "Overland Park, KS", href: "/storage-in-overland-park", description: "Our flagship facility" },
+      { label: "Kansas Storage", href: "/storage-in-kansas", description: "All KS locations" },
     ],
   },
-  {
-    label: "Life Here",
-    href: "/life-here",
-    children: [
-      { label: "Activities & Events", href: "/life-here", description: "Programs and socials" },
-      { label: "Dining & Nutrition", href: "/life-here/dining", description: "Chef-prepared meals" },
-      { label: "Amenities & Services", href: "/life-here/amenities", description: "Everything under one roof" },
-    ],
-  },
-  {
-    label: "Resources",
-    href: "/resources",
-    children: [
-      { label: "Resource Center", href: "/resources", description: "Guides and articles" },
-      { label: "Blog & Guides", href: "/resources/blog", description: "Articles and expert advice" },
-      { label: "Financial Help", href: "/resources/financial-help", description: "Costs and assistance" },
-      { label: "FAQ", href: "/resources/faq", description: "Answers to common questions" },
-    ],
-  },
+  { label: "Size Guide", href: "/size-guide" },
+  { label: "Blog & Tips", href: "/blog" },
+  { label: "About Us", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 
 export const footerColumns: FooterColumn[] = [
   {
-    title: "Living Options",
+    title: "Storage Units",
     links: [
-      { label: "Living Options Overview", href: "/living-options" },
-      { label: "Independent Living", href: "/living-options/independent-living" },
-      { label: "Assisted Living", href: "/living-options/assisted-living" },
-      { label: "Memory Care", href: "/living-options/memory-care" },
-      { label: "Respite / Short-Term", href: "/living-options/respite-care" },
-      { label: "Floor Plans & Pricing", href: "/pricing" },
+      { label: "View Available Units", href: "/facility" },
+      { label: "5×5 Small Units", href: "/size-guide#5x5" },
+      { label: "10×10 Medium Units", href: "/size-guide#10x10" },
+      { label: "10×20 Large Units", href: "/size-guide#10x20" },
+      { label: "Size Guide", href: "/size-guide" },
     ],
   },
   {
-    title: "Life & Community",
+    title: "Locations",
     links: [
-      { label: "About Us", href: "/about" },
-      { label: "Our Team", href: "/about/our-team" },
-      { label: "Life Here", href: "/life-here" },
-      { label: "Dining & Nutrition", href: "/life-here/dining" },
-      { label: "Amenities", href: "/life-here/amenities" },
-      { label: "Testimonials", href: "/#testimonials" },
+      { label: "Overland Park, KS", href: "/storage-in-overland-park" },
+      { label: "Storage in Kansas", href: "/storage-in-kansas" },
+      { label: "All Locations", href: "/locations" },
     ],
   },
   {
     title: "Resources",
     links: [
-      { label: "Resource Center", href: "/resources" },
-      { label: "Blog & Guides", href: "/resources/blog" },
-      { label: "FAQ", href: "/resources/faq" },
-      { label: "Financial Help", href: "/resources/financial-help" },
+      { label: "Blog & Moving Tips", href: "/blog" },
+      { label: "Storage Size Guide", href: "/size-guide" },
+      { label: "FAQ", href: "/facility#faq" },
+      { label: "About Us", href: "/about" },
     ],
   },
   {
-    title: "Get in Touch",
+    title: "Contact Us",
     links: [
-      { label: "Schedule a Tour", href: "/schedule-tour" },
+      { label: "Reserve a Unit", href: "/facility" },
       { label: "Contact Us", href: "/contact" },
-      { label: "Request Pricing", href: "/pricing" },
+      { label: "Get Directions", href: "/contact#map" },
     ],
   },
 ];
@@ -104,5 +81,4 @@ export const footerColumns: FooterColumn[] = [
 export const socialLinks: SocialLink[] = [
   { platform: "facebook", href: "#", label: "Follow us on Facebook" },
   { platform: "instagram", href: "#", label: "Follow us on Instagram" },
-  { platform: "youtube", href: "#", label: "Subscribe on YouTube" },
 ];
