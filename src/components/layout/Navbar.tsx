@@ -57,7 +57,7 @@ export function Navbar({
       {/* Skip link */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-accent focus:text-white focus:px-4 focus:py-2 focus:rounded-md focus:font-semibold"
+        className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-accent focus:text-background focus:px-4 focus:py-2 focus:font-semibold"
       >
         Skip to main content
       </a>
@@ -66,7 +66,7 @@ export function Navbar({
         <div className="flex h-[72px] items-center justify-between">
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 group">
-            <div className="h-9 w-9 rounded-lg bg-white/10 flex items-center justify-center">
+            <div className="h-9 w-9 bg-white/10 flex items-center justify-center">
               <span className="text-white font-heading text-lg font-bold">
                 {logo.charAt(0)}
               </span>
@@ -87,7 +87,7 @@ export function Navbar({
                   onMouseLeave={() => setOpenDropdown(null)}
                 >
                   <button
-                    className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-white/85 hover:text-white transition-colors rounded-md hover:bg-white/8"
+                    className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-white/85 hover:text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
                     aria-expanded={openDropdown === link.label}
                     aria-haspopup="true"
                     onClick={() => toggleDropdown(link.label)}
@@ -102,7 +102,7 @@ export function Navbar({
                     />
                   </button>
                   {openDropdown === link.label && (
-                    <div className="absolute top-full left-0 mt-2 w-72 rounded-md bg-background border border-text/5 shadow-xl shadow-text/10 py-2">
+                    <div className="absolute top-full left-0 mt-2 w-72 bg-background border border-text/5 shadow-xl shadow-text/10 py-2">
                       {link.children.map((child) => (
                         <a
                           key={child.href}
@@ -124,7 +124,7 @@ export function Navbar({
                 <a
                   key={link.href}
                   href={link.href}
-                  className="px-4 py-2 text-sm font-medium text-white/85 hover:text-white transition-colors rounded-md hover:bg-white/8"
+                  className="px-4 py-2 text-sm font-medium text-white/85 hover:text-white transition-colors hover:bg-white/10"
                 >
                   {link.label}
                 </a>
@@ -143,7 +143,7 @@ export function Navbar({
             </a>
             <a
               href={ctaHref}
-              className="bg-sand text-primary-dark font-semibold px-5 py-2.5 rounded-md text-sm shadow-md hover:bg-background hover:shadow-lg hover:-translate-y-0.5 transition-all focus-visible:ring-2 focus-visible:ring-sand focus-visible:ring-offset-2 focus-visible:ring-offset-primary"
+              className="bg-accent text-background font-bold px-5 py-2.5 text-sm shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-primary uppercase tracking-widest"
             >
               {ctaText}
             </a>
@@ -151,7 +151,7 @@ export function Navbar({
 
           {/* Mobile hamburger */}
           <button
-            className="lg:hidden p-2 rounded-md hover:bg-white/10 transition-colors focus-visible:ring-2 focus-visible:ring-white"
+            className="lg:hidden p-2 hover:bg-white/10 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
@@ -171,7 +171,7 @@ export function Navbar({
               <div key={link.label}>
                 <a
                   href={link.href}
-                  className="block px-4 py-3 text-base font-medium text-white/85 hover:text-white hover:bg-white/8 rounded-md transition-colors"
+                  className="block px-4 py-3 text-base font-medium text-white/85 hover:text-white hover:bg-white/10 transition-colors"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
@@ -181,7 +181,7 @@ export function Navbar({
                     <a
                       key={child.href}
                       href={child.href}
-                      className="block pl-8 pr-4 py-2.5 text-sm text-white/70 hover:text-white hover:bg-white/8 rounded-md transition-colors"
+                      className="block pl-8 pr-4 py-2.5 text-sm text-white/70 hover:text-white hover:bg-white/10 transition-colors"
                       onClick={() => setMobileOpen(false)}
                     >
                       {child.label}
@@ -199,7 +199,7 @@ export function Navbar({
               </a>
               <a
                 href={ctaHref}
-                className="block text-center bg-secondary text-white font-semibold px-6 py-3 rounded-md shadow-lg"
+                className="block text-center bg-accent text-background font-bold px-6 py-3 shadow-lg uppercase tracking-widest"
               >
                 {ctaText}
               </a>

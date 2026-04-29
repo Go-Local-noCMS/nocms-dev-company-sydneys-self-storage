@@ -87,7 +87,7 @@ export function StorageTestimonials() {
             className="absolute top-6 right-8 font-heading text-9xl text-primary/10 leading-none select-none pointer-events-none"
             aria-hidden="true"
           >
-            "
+            &ldquo;
           </div>
 
           <div className="flex gap-1 mb-6">
@@ -97,7 +97,7 @@ export function StorageTestimonials() {
           </div>
 
           <p className="text-text text-xl md:text-2xl font-body leading-relaxed mb-8 italic">
-            "{t.text}"
+            &ldquo;{t.text}&rdquo;
           </p>
 
           <div className="flex items-center justify-between flex-wrap gap-4">
@@ -112,14 +112,14 @@ export function StorageTestimonials() {
               <button
                 onClick={prev}
                 aria-label="Previous testimonial"
-                className="h-12 w-12 border-2 border-white/20 flex items-center justify-center text-muted hover:border-primary hover:text-primary transition-colors"
+                className="h-12 w-12 border-2 border-white/20 flex items-center justify-center text-muted hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
               >
                 <ChevronLeft className="w-5 h-5" aria-hidden="true" />
               </button>
               <button
                 onClick={next}
                 aria-label="Next testimonial"
-                className="h-12 w-12 border-2 border-white/20 flex items-center justify-center text-muted hover:border-primary hover:text-primary transition-colors"
+                className="h-12 w-12 border-2 border-white/20 flex items-center justify-center text-muted hover:border-primary hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
               >
                 <ChevronRight className="w-5 h-5" aria-hidden="true" />
               </button>
@@ -134,7 +134,8 @@ export function StorageTestimonials() {
               key={i}
               onClick={() => setCurrent(i)}
               aria-label={`Go to testimonial ${i + 1}`}
-              className={`h-2 transition-all ${i === current ? "w-8 bg-primary" : "w-2 bg-white/20 hover:bg-white/40"}`}
+              aria-current={i === current ? "true" : undefined}
+              className={`h-2 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background ${i === current ? "w-8 bg-primary" : "w-2 bg-white/20 hover:bg-white/40"}`}
             />
           ))}
         </div>

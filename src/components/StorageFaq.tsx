@@ -46,7 +46,7 @@ export function StorageFaq() {
             <button
               key={cat}
               onClick={() => { setActiveCategory(cat); setOpenIndex(null); }}
-              className={`px-4 py-2 text-xs font-bold uppercase tracking-widest border-2 transition-colors ${
+              className={`px-4 py-2 text-xs font-bold uppercase tracking-widest border-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-surface ${
                 activeCategory === cat
                   ? "bg-primary border-primary text-white"
                   : "border-white/20 text-muted hover:border-primary/50 hover:text-text"
@@ -63,7 +63,7 @@ export function StorageFaq() {
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
                 aria-expanded={openIndex === i}
-                className="w-full text-left flex items-center justify-between py-5 px-0 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                className="w-full text-left flex items-center justify-between py-5 px-0 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-1 focus-visible:ring-offset-surface"
               >
                 <span className="font-body font-bold text-text group-hover:text-primary transition-colors pr-4">
                   {faq.question}

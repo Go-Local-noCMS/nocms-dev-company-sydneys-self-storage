@@ -17,7 +17,7 @@ interface UnitTableProps {
 }
 
 const defaultUnits: Unit[] = [
-  { size: "5×5", dimensions: "5 ft × 5 ft × 8 ft", price: 49, features: ["Climate Control", "Ground Floor"], availability: 8, },
+  { size: "5×5", dimensions: "5 ft × 5 ft × 8 ft", price: 49, features: ["Climate Control", "Ground Floor"], availability: 8 },
   { size: "5×10", dimensions: "5 ft × 10 ft × 8 ft", price: 79, features: ["Climate Control", "Ground Floor"], availability: 5, popular: true },
   { size: "10×10", dimensions: "10 ft × 10 ft × 9 ft", price: 119, features: ["Climate Control", "Drive-Up", "24/7 Access"], availability: 3 },
   { size: "10×15", dimensions: "10 ft × 15 ft × 9 ft", price: 149, features: ["Climate Control", "Drive-Up", "24/7 Access"], availability: 6 },
@@ -51,7 +51,7 @@ export function UnitTable({ units = defaultUnits, facilitySlug = "facility" }: U
           <button
             key={f.key}
             onClick={() => setFilter(f.key)}
-            className={`px-5 py-2 text-sm font-bold uppercase tracking-widest border-2 transition-colors ${
+            className={`px-5 py-2 text-sm font-bold uppercase tracking-widest border-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background ${
               filter === f.key
                 ? "bg-primary border-primary text-white shadow-lg shadow-primary/30"
                 : "border-white/20 text-muted hover:border-primary/50 hover:text-text"
@@ -123,7 +123,7 @@ export function UnitTable({ units = defaultUnits, facilitySlug = "facility" }: U
                 <td className="py-5 px-4">
                   <Link
                     href={`/${facilitySlug}#reserve`}
-                    className="bg-primary text-white font-bold px-6 py-3 uppercase tracking-widest text-sm shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/50 hover:-translate-y-0.5 transition-transform inline-block"
+                    className="bg-primary text-white font-bold px-6 py-3 uppercase tracking-widest text-sm shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/50 hover:-translate-y-0.5 transition-transform inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                   >
                     Reserve
                   </Link>
@@ -175,7 +175,7 @@ export function UnitTable({ units = defaultUnits, facilitySlug = "facility" }: U
               )}
               <Link
                 href={`/${facilitySlug}#reserve`}
-                className="bg-primary text-white font-bold px-5 py-2.5 uppercase tracking-widest text-sm shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/50 transition-shadow inline-block"
+                className="bg-primary text-white font-bold px-5 py-2.5 uppercase tracking-widest text-sm shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/50 transition-shadow inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
               >
                 Reserve
               </Link>
