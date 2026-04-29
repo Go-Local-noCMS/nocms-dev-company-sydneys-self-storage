@@ -1,0 +1,52 @@
+{
+  "colors": {
+    "primary": "#e02070",
+    "secondary": "#ff6b35",
+    "accent": "#ffdd00",
+    "background": "#0a0a0a",
+    "surface": "#151515",
+    "text": "#f0f0f0",
+    "muted": "#777777"
+  },
+  "typography": {
+    "headingFont": "Orbitron",
+    "bodyFont": "Nunito Sans",
+    "monoFont": "JetBrains Mono",
+    "scale": "spacious"
+  },
+  "spacing": "default",
+  "borderRadius": "none",
+  "shadows": "dramatic",
+  "mood": "Neon signs blazing in a dark warehouse district — urban, bold, electric nightlife",
+  "motionStyle": "expressive",
+  "layoutStyle": "asymmetric",
+  "designRules": [
+    "LAYOUT: Asymmetric sections with diagonal/skewed background transitions. Giant neon Orbitron headlines. Unit cards have neon-glow borders on hover. No border radius anywhere — sharp warehouse edges. Yellow badges for alerts only.",
+    "Hot pink neon is the signature — use it for headlines, CTAs, and key highlights",
+    "No border radius anywhere — sharp industrial warehouse edges throughout",
+    "Neon glow effects on text and buttons simulate actual neon tube lighting",
+    "Dark concrete background with subtle noise texture adds raw warehouse feel",
+    "Yellow accent for pricing and special offers — like a sale tag under neon light",
+    "Unit pricing displays glow with hot pink neon accents — featured sizes get neon border glow effects",
+    "Facility photo carousels have no border radius — raw warehouse-edge frames with thin pink border",
+    "CONVERSION: Facility pages use Layout Option C (hero units) — top 3 units as neon-bordered cards with glowing Reserve buttons above fold, then full table. Search in hero with pink glow. On market pages, facility cards show starting prices and unit count.",
+    "CONVERSION: Reserve/CTA buttons must be the single most visually prominent element on every page — larger than navigation links, higher contrast than body text, with hover state that increases visual weight. Use the primary color at full saturation. Every unit card and table row MUST have a Reserve button.",
+    "CONVERSION: Use badges to show real-time social proof and urgency — 'Most Popular' on the best-selling size, 'X Left!' in a warning color when availability is low, 'Available' in a success color for in-stock units. Price must be the largest text element in every unit card, displayed in the primary or accent color."
+  ],
+  "designPatterns": {
+    "card": "<div className=\"bg-surface border border-white/5 p-7 shadow-xl shadow-black/30 hover:border-primary/30 hover:shadow-primary/10 transition-all\">",
+    "button": "<a className=\"bg-primary text-white font-bold px-8 py-4 uppercase tracking-widest text-base shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/50 hover:-translate-y-0.5 transition-all\">",
+    "buttonSecondary": "<a className=\"border-2 border-primary/50 text-primary font-bold px-8 py-4 uppercase tracking-widest hover:bg-primary/10 transition-all\">",
+    "heading": "<h2 className=\"font-heading text-6xl md:text-8xl font-extrabold text-primary uppercase tracking-wide leading-[0.85]\">",
+    "subheading": "<p className=\"text-xl text-text-muted leading-relaxed max-w-2xl\">",
+    "badge": "<span className=\"inline-flex items-center bg-accent text-background font-bold px-4 py-1.5 uppercase tracking-wider text-sm\">",
+    "input": "<input className=\"w-full bg-background border-2 border-white/10 px-5 py-3.5 text-text placeholder:text-text-muted focus:outline-none focus:border-primary/50 focus:shadow-[0_0_10px] focus:shadow-primary/20 transition\" />",
+    "sectionBg": "bg-background",
+    "sectionAltBg": "bg-surface",
+    "sectionDarkBg": "bg-gradient-to-b from-primary/5 via-background to-background",
+    "navStyle": "bg-background/90 backdrop-blur-lg border-b border-primary/20",
+    "footerStyle": "bg-surface border-t border-primary/20",
+    "iconBox": "<div className=\"h-14 w-14 bg-primary/10 border border-primary/20 flex items-center justify-center text-primary\">",
+    "divider": "<div className=\"h-0.5 bg-gradient-to-r from-primary/40 via-secondary/20 to-transparent\">"
+  }
+}
