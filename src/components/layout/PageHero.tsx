@@ -50,16 +50,16 @@ export function PageHero({
 
   if (variant === "simple") {
     return (
-      <section className="bg-primary py-16 lg:py-24 text-center">
+      <section className="bg-primary py-16 lg:py-24 text-center" data-nocms-component="layout/page-hero">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h1
             className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight whitespace-pre-line"
-            style={{ textWrap: "balance" } as React.CSSProperties}
+            style={{ textWrap: "balance" } as React.CSSProperties} data-role="heading"
           >
             {title}
           </h1>
           {subtitle && (
-            <p className="mt-4 text-lg text-white/85 max-w-2xl mx-auto">{subtitle}</p>
+            <p className="mt-4 text-lg text-white/85 max-w-2xl mx-auto" data-role="subheading">{subtitle}</p>
           )}
           {ctas.length > 0 && (
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
@@ -92,7 +92,7 @@ export function PageHero({
         alt=""
         className="absolute inset-0 w-full h-full object-cover z-0"
         loading="eager"
-        role="presentation"
+        role="presentation" data-role="media"
       />
 
       {/* Video (if variant is "video" and sources provided) */}

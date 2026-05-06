@@ -44,7 +44,7 @@ export function UnitTable({ units = defaultUnits, facilitySlug = "facility" }: U
   });
 
   return (
-    <div className="w-full">
+    <div className="w-full" data-nocms-component="unit-table">
       {/* Filter Bar */}
       <div className="flex flex-wrap gap-2 mb-6">
         {filters.map((f) => (

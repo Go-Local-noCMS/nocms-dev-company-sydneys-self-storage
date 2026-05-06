@@ -23,7 +23,7 @@ export function SectionWrapper({
   return (
     <section
       id={id}
-      className={`relative py-16 lg:py-24 overflow-hidden ${bgClasses[bg] ?? bgClasses.background} ${className}`}
+      className={`relative py-16 lg:py-24 overflow-hidden ${bgClasses[bg] ?? bgClasses.background} ${className}`} data-nocms-component="layout/section-wrapper"
     >
       {pattern && (
         <div

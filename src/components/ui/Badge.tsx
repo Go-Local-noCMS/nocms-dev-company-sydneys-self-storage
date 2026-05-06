@@ -16,7 +16,7 @@ export function Badge({ children, variant = "primary", className = "" }: BadgePr
     <span
       className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider ${
         variantClasses[variant] ?? variantClasses.primary
-      } ${className}`}
+      } ${className}`} data-nocms-component="ui/badge"
     >
       {children}
     </span>

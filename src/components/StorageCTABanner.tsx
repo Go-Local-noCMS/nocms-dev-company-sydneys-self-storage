@@ -18,7 +18,7 @@ export function StorageCTABanner({
   secondaryHref = "tel:9135550190",
 }: StorageCTABannerProps) {
   return (
-    <section className="bg-primary py-20 px-6 relative overflow-hidden">
+    <section className="bg-primary py-20 px-6 relative overflow-hidden" data-nocms-component="storage-cta-banner">
       <div
         className="absolute inset-0 opacity-10 pointer-events-none"
         style={{
@@ -36,11 +36,11 @@ export function StorageCTABanner({
 
       <div className="max-w-5xl mx-auto relative z-10 text-center">
         <h2 className="font-heading text-4xl md:text-6xl font-extrabold text-white uppercase tracking-wide leading-[0.9] mb-4"
-          style={{ textShadow: "0 2px 20px rgba(0,0,0,0.3)" }}
+          style={{ textShadow: "0 2px 20px rgba(0,0,0,0.3)" }} data-role="heading"
         >
           {heading}
         </h2>
-        <p className="text-white/80 text-xl font-body mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-white/80 text-xl font-body mb-10 max-w-2xl mx-auto leading-relaxed" data-role="subheading">
           {subheading}
         </p>
         <div className="flex flex-wrap gap-4 justify-center">

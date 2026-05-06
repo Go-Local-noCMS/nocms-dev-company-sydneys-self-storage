@@ -26,10 +26,10 @@ export function PhotoGrid({
 }: PhotoGridProps) {
   if (layout === "masonry") {
     return (
-      <section className="bg-background py-16 lg:py-24">
+      <section className="bg-background py-16 lg:py-24" data-nocms-component="content/photo-grid">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {heading && (
-            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-text text-center mb-12">
+            <h2 className="font-heading text-3xl sm:text-4xl font-bold text-text text-center mb-12" data-role="heading">
               {heading}
             </h2>
           )}
@@ -45,7 +45,7 @@ export function PhotoGrid({
                   className={`w-full object-cover transition-transform duration-500 group-hover:scale-105 ${
                     i % 3 === 0 ? "h-80" : i % 3 === 1 ? "h-60" : "h-72"
                   }`}
-                  loading="lazy"
+                  loading="lazy" data-role="media"
                 />
                 {photo.label && (
                   <div className="absolute inset-0 bg-gradient-to-t from-text/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">

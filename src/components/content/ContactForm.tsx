@@ -54,10 +54,10 @@ export function ContactForm({
 
   if (submitted) {
     return (
-      <div className="bg-surface rounded-xl p-12 text-center">
+      <div className="bg-surface rounded-xl p-12 text-center" data-nocms-component="content/contact-form">
         <CheckCircle className="h-16 w-16 text-primary mx-auto mb-6" aria-hidden="true" />
-        <h3 className="font-heading text-2xl font-bold text-text mb-3">Thank You!</h3>
-        <p className="text-muted max-w-md mx-auto">
+        <h3 className="font-heading text-2xl font-bold text-text mb-3" data-role="heading">Thank You!</h3>
+        <p className="text-muted max-w-md mx-auto" data-role="subheading">
           We have received your message and will be in touch within 24 hours. In the meantime, feel free to call us or schedule a tour.
         </p>
       </div>

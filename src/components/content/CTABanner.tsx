@@ -29,16 +29,16 @@ export function CTABanner({
   phone,
 }: CTABannerProps) {
   return (
-    <section className={`py-16 lg:py-20 ${variantClasses[variant] ?? variantClasses.primary}`}>
+    <section className={`py-16 lg:py-20 ${variantClasses[variant] ?? variantClasses.primary}`} data-nocms-component="content/cta-banner">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
         <h2
           className="font-heading text-3xl sm:text-4xl font-bold mb-4"
-          style={{ textWrap: "balance" } as React.CSSProperties}
+          style={{ textWrap: "balance" } as React.CSSProperties} data-role="heading"
         >
           {heading}
         </h2>
         {description && (
-          <p className="text-white/85 text-lg mb-8 max-w-2xl mx-auto">{description}</p>
+          <p className="text-white/85 text-lg mb-8 max-w-2xl mx-auto" data-role="subheading">{description}</p>
         )}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a

@@ -53,13 +53,13 @@ const defaultFacilities: FacilityListing[] = [
 
 export function CityFacilityList({ city = "Overland Park", facilities = defaultFacilities }: CityFacilityListProps) {
   return (
-    <section className="bg-background py-24 px-6">
+    <section className="bg-background py-24 px-6" data-nocms-component="city-facility-list">
       <div className="max-w-5xl mx-auto">
         <div className="mb-12">
           <span className="inline-flex items-center bg-accent text-background font-bold px-4 py-1.5 uppercase tracking-wider text-sm mb-4">
             {city} Locations
           </span>
-          <h2 className="font-heading text-5xl md:text-6xl font-extrabold text-primary uppercase tracking-wide leading-[0.85]">
+          <h2 className="font-heading text-5xl md:text-6xl font-extrabold text-primary uppercase tracking-wide leading-[0.85]" data-role="heading">
             {facilities.length} {facilities.length === 1 ? "Facility" : "Facilities"}<br />Near You
           </h2>
         </div>

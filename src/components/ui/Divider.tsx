@@ -10,7 +10,7 @@ export function Divider({ motif, className = "" }: DividerProps) {
 
   if (resolvedMotif === "leaf") {
     return (
-      <div className={`flex items-center justify-center gap-4 py-6 ${className}`} aria-hidden="true">
+      <div className={`flex items-center justify-center gap-4 py-6 ${className}`} aria-hidden="true" data-nocms-component="ui/divider">
         <div className="h-px flex-1 max-w-24 bg-gradient-to-r from-transparent to-primary/30" />
         <svg viewBox="0 0 24 24" className="h-6 w-6 text-primary/40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 2C6.5 6.5 4 10 4 14c0 3.5 2.5 6 6 7.5C10 18 12 14 12 14s2 4 2 7.5c3.5-1.5 6-4 6-7.5 0-4-2.5-7.5-8-12z" />

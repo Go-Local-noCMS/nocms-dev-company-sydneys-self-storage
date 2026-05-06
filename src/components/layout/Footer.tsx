@@ -28,7 +28,7 @@ export function Footer({
   };
 
   return (
-    <footer className="bg-surface border-t border-primary/20 text-text relative overflow-hidden">
+    <footer className="bg-surface border-t border-primary/20 text-text relative overflow-hidden" data-nocms-component="layout/footer">
       {/* Top accent line */}
       <div className="h-0.5 bg-gradient-to-r from-primary/40 via-secondary/20 to-transparent" />
 
@@ -46,7 +46,7 @@ export function Footer({
                 {brandName}
               </span>
             </div>
-            <p className="text-muted text-sm leading-relaxed">
+            <p className="text-muted text-sm leading-relaxed" data-role="subheading">
               {skinConfig.tagline}. Clean, secure, and accessible 24/7 — because your belongings deserve real protection.
             </p>
           </div>
@@ -76,7 +76,7 @@ export function Footer({
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 mb-12">
           {columns.map((col) => (
             <div key={col.title}>
-              <h3 className="font-heading text-sm font-semibold text-text tracking-wide uppercase mb-4">
+              <h3 className="font-heading text-sm font-semibold text-text tracking-wide uppercase mb-4" data-role="heading">
                 {col.title}
               </h3>
               <ul className="space-y-2.5">

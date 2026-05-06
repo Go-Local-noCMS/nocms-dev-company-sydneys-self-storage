@@ -69,7 +69,7 @@ export function BlogGrid({ posts = defaultPosts, showFeatured = true }: BlogGrid
   const rest = showFeatured ? posts.filter((p) => !p.featured) : posts;
 
   return (
-    <section className="bg-background py-24 px-6">
+    <section className="bg-background py-24 px-6" data-nocms-component="blog-grid">
       <div className="max-w-7xl mx-auto">
         {/* Featured Post */}
         {featured && (
@@ -88,10 +88,10 @@ export function BlogGrid({ posts = defaultPosts, showFeatured = true }: BlogGrid
                     {new Date(featured.date).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
                   </span>
                 </div>
-                <h2 className="font-heading text-3xl md:text-5xl font-extrabold text-text group-hover:text-primary transition-colors uppercase tracking-wide leading-tight mb-4">
+                <h2 className="font-heading text-3xl md:text-5xl font-extrabold text-text group-hover:text-primary transition-colors uppercase tracking-wide leading-tight mb-4" data-role="heading">
                   {featured.title}
                 </h2>
-                <p className="text-muted text-lg font-body leading-relaxed mb-6 max-w-3xl">{featured.excerpt}</p>
+                <p className="text-muted text-lg font-body leading-relaxed mb-6 max-w-3xl" data-role="subheading">{featured.excerpt}</p>
                 <span className="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest group-hover:gap-4 transition-all">
                   Read Article <ArrowRight className="w-4 h-4" aria-hidden="true" />
                 </span>

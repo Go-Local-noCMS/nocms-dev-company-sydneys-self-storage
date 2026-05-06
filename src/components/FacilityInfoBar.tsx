@@ -23,7 +23,7 @@ export function FacilityInfoBar({
   ];
 
   return (
-    <div className="bg-surface border-y border-primary/20">
+    <div className="bg-surface border-y border-primary/20" data-nocms-component="facility-info-bar">
       <div className="max-w-7xl mx-auto px-6 py-6">
         <div className="flex flex-wrap gap-8 items-center justify-between">
           {items.map((item, i) => (

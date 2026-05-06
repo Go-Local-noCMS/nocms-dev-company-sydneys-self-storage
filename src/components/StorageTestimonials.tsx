@@ -61,7 +61,7 @@ export function StorageTestimonials() {
   const t = testimonials[current];
 
   return (
-    <section className="bg-background py-24 px-6 relative overflow-hidden">
+    <section className="bg-background py-24 px-6 relative overflow-hidden" data-nocms-component="storage-testimonials">
       <div
         className="absolute inset-0 opacity-5 pointer-events-none"
         style={{
@@ -76,7 +76,7 @@ export function StorageTestimonials() {
           <span className="inline-flex items-center bg-accent text-background font-bold px-4 py-1.5 uppercase tracking-wider text-sm mb-4">
             Customer Reviews
           </span>
-          <h2 className="font-heading text-5xl md:text-7xl font-extrabold text-primary uppercase tracking-wide leading-[0.85]">
+          <h2 className="font-heading text-5xl md:text-7xl font-extrabold text-primary uppercase tracking-wide leading-[0.85]" data-role="heading">
             600+ Happy<br />Customers
           </h2>
         </div>
@@ -96,7 +96,7 @@ export function StorageTestimonials() {
             ))}
           </div>
 
-          <p className="text-text text-xl md:text-2xl font-body leading-relaxed mb-8 italic">
+          <p className="text-text text-xl md:text-2xl font-body leading-relaxed mb-8 italic" data-role="subheading">
             &ldquo;{t.text}&rdquo;
           </p>
 

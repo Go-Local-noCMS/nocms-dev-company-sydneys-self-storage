@@ -13,7 +13,7 @@ export function CrisisBand({
   phone = skinConfig.phone,
 }: CrisisBandProps) {
   return (
-    <section className="bg-primary-dark py-8 lg:py-10 relative overflow-hidden">
+    <section className="bg-primary-dark py-8 lg:py-10 relative overflow-hidden" data-nocms-component="content/crisis-band">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           <div className="flex items-start gap-4">
@@ -21,8 +21,8 @@ export function CrisisBand({
               <AlertCircle className="h-6 w-6 text-white" aria-hidden="true" />
             </div>
             <div>
-              <h2 className="font-heading text-xl font-bold text-white mb-1">{heading}</h2>
-              <p className="text-white/80 text-sm max-w-lg">{description}</p>
+              <h2 className="font-heading text-xl font-bold text-white mb-1" data-role="heading">{heading}</h2>
+              <p className="text-white/80 text-sm max-w-lg" data-role="subheading">{description}</p>
             </div>
           </div>
           <a

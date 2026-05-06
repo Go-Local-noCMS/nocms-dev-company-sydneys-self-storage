@@ -86,16 +86,16 @@ const sizes: SizeUnit[] = [
 
 export function SizeGuideGrid() {
   return (
-    <section className="bg-background py-24 px-6">
+    <section className="bg-background py-24 px-6" data-nocms-component="size-guide-grid">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <span className="inline-flex items-center bg-accent text-background font-bold px-4 py-1.5 uppercase tracking-wider text-sm mb-4">
             All Unit Sizes
           </span>
-          <h2 className="font-heading text-5xl md:text-7xl font-extrabold text-primary uppercase tracking-wide leading-[0.85] mb-4">
+          <h2 className="font-heading text-5xl md:text-7xl font-extrabold text-primary uppercase tracking-wide leading-[0.85] mb-4" data-role="heading">
             Find Your<br />Perfect Fit
           </h2>
-          <p className="text-muted text-xl max-w-2xl font-body leading-relaxed">
+          <p className="text-muted text-xl max-w-2xl font-body leading-relaxed" data-role="subheading">
             Compare every size side-by-side. Click any unit to reserve — or use the size selector below if you're not sure.
           </p>
         </div>

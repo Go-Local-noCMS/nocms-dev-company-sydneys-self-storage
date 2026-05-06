@@ -52,7 +52,7 @@ export function Navbar({
         scrolled
           ? "bg-primary shadow-lg shadow-primary/15"
           : "bg-primary"
-      }`}
+      }`} data-nocms-component="layout/navbar"
     >
       {/* Skip link */}
       <a
@@ -143,7 +143,7 @@ export function Navbar({
             </a>
             <a
               href={ctaHref}
-              className="bg-accent text-background font-bold px-5 py-2.5 text-sm shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-primary uppercase tracking-widest"
+              className="bg-accent text-background font-bold px-5 py-2.5 text-sm shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-primary uppercase tracking-widest" data-role="cta"
             >
               {ctaText}
             </a>

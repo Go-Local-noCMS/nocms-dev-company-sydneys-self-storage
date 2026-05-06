@@ -29,7 +29,7 @@ export function StorageHeroSearch() {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background" data-nocms-component="storage-hero-search">
       {/* Neon grid background */}
       <div
         className="absolute inset-0 opacity-10"
@@ -53,14 +53,14 @@ export function StorageHeroSearch() {
 
         {/* Headline */}
         <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-extrabold text-primary uppercase tracking-wide leading-[0.85] mb-6"
-          style={{ textShadow: "0 0 40px rgba(224,32,112,0.5), 0 0 80px rgba(224,32,112,0.2)" }}
+          style={{ textShadow: "0 0 40px rgba(224,32,112,0.5), 0 0 80px rgba(224,32,112,0.2)" }} data-role="heading"
         >
           Sydney's<br />
           <span className="text-text">Self</span><br />
           Storage
         </h1>
 
-        <p className="text-xl text-muted font-body mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl text-muted font-body mb-10 max-w-2xl mx-auto leading-relaxed" data-role="subheading">
           Climate-controlled units in Overland Park. Secure, clean, and accessible 24/7.
           Reserve online in minutes — no credit card required.
         </p>
@@ -80,7 +80,7 @@ export function StorageHeroSearch() {
           </div>
           <button
             type="submit"
-            className="bg-primary text-white font-bold px-10 py-5 uppercase tracking-widest text-base shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/50 hover:-translate-y-0.5 transition-transform flex items-center gap-2 justify-center"
+            className="bg-primary text-white font-bold px-10 py-5 uppercase tracking-widest text-base shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/50 hover:-translate-y-0.5 transition-transform flex items-center gap-2 justify-center" data-role="cta"
           >
             <Search className="w-5 h-5" aria-hidden="true" />
             Find Units

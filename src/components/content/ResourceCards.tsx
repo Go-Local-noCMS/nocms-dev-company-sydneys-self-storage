@@ -55,9 +55,9 @@ export function ResourceCards({
   heading = "Helpful Resources for Families",
 }: ResourceCardsProps) {
   return (
-    <section className="bg-background py-16 lg:py-24">
+    <section className="bg-background py-16 lg:py-24" data-nocms-component="content/resource-cards">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="font-heading text-3xl sm:text-4xl font-bold text-text text-center mb-12">
+        <h2 className="font-heading text-3xl sm:text-4xl font-bold text-text text-center mb-12" data-role="heading">
           {heading}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
@@ -75,7 +75,7 @@ export function ResourceCards({
                       src={resource.image}
                       alt={resource.title}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      loading="lazy"
+                      loading="lazy" data-role="media"
                     />
                     <div className="absolute top-3 left-3">
                       <Badge variant="primary" className="bg-primary/90 text-white backdrop-blur-sm">
@@ -89,7 +89,7 @@ export function ResourceCards({
                   <h3 className="font-heading text-lg font-bold text-text mb-2 group-hover:text-primary transition-colors">
                     {resource.title}
                   </h3>
-                  <p className="text-muted text-sm leading-relaxed mb-4">
+                  <p className="text-muted text-sm leading-relaxed mb-4" data-role="subheading">
                     {resource.description}
                   </p>
                   <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-3 transition-all">

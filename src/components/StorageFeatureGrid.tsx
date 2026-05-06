@@ -51,13 +51,13 @@ const features: Feature[] = [
 
 export function StorageFeatureGrid() {
   return (
-    <section className="bg-background py-24 px-6">
+    <section className="bg-background py-24 px-6" data-nocms-component="storage-feature-grid">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <span className="inline-flex items-center bg-accent text-background font-bold px-4 py-1.5 uppercase tracking-wider text-sm mb-4">
             Why Choose Us
           </span>
-          <h2 className="font-heading text-5xl md:text-7xl font-extrabold text-primary uppercase tracking-wide leading-[0.85]">
+          <h2 className="font-heading text-5xl md:text-7xl font-extrabold text-primary uppercase tracking-wide leading-[0.85]" data-role="heading">
             Everything<br />You Need
           </h2>
         </div>
@@ -74,7 +74,7 @@ export function StorageFeatureGrid() {
               <h3 className="font-heading text-lg font-extrabold text-text uppercase tracking-wide mb-3">
                 {f.title}
               </h3>
-              <p className="text-muted text-sm leading-relaxed font-body">{f.description}</p>
+              <p className="text-muted text-sm leading-relaxed font-body" data-role="subheading">{f.description}</p>
             </div>
           ))}
         </div>

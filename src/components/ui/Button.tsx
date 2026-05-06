@@ -38,7 +38,7 @@ export function Button({
 
   if (href) {
     return (
-      <a href={href} className={classes}>
+      <a href={href} className={classes} data-nocms-component="ui/button">
         {children}
       </a>
     );

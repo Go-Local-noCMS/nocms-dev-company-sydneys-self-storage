@@ -73,9 +73,9 @@ export function WhySection({
     const Icon = iconMap[reason.icon ?? "heart"] ?? Heart;
 
     return (
-      <section className="bg-surface py-16 lg:py-24">
+      <section className="bg-surface py-16 lg:py-24" data-nocms-component="content/why-section">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-text mb-4">{heading}</h2>
+          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-text mb-4" data-role="heading">{heading}</h2>
           {subtitle && <p className="text-muted mb-12">{subtitle}</p>}
 
           <div className="bg-background rounded-2xl p-10 shadow-sm border border-text/5 min-h-[240px] flex flex-col items-center justify-center">
@@ -83,7 +83,7 @@ export function WhySection({
               <Icon className="h-8 w-8 text-primary" aria-hidden="true" />
             </div>
             <h3 className="font-heading text-2xl font-bold text-text mb-3">{reason.title}</h3>
-            <p className="text-muted max-w-lg leading-relaxed">{reason.description}</p>
+            <p className="text-muted max-w-lg leading-relaxed" data-role="subheading">{reason.description}</p>
           </div>
 
           <div className="flex items-center justify-center gap-4 mt-8">

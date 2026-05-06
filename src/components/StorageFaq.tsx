@@ -30,13 +30,13 @@ export function StorageFaq() {
   const filtered = faqs.filter((f) => activeCategory === "All" || f.category === activeCategory);
 
   return (
-    <section className="bg-surface py-24 px-6" id="faq">
+    <section className="bg-surface py-24 px-6" id="faq" data-nocms-component="storage-faq">
       <div className="max-w-4xl mx-auto">
         <div className="mb-12">
           <span className="inline-flex items-center bg-accent text-background font-bold px-4 py-1.5 uppercase tracking-wider text-sm mb-4">
             FAQ
           </span>
-          <h2 className="font-heading text-5xl md:text-6xl font-extrabold text-primary uppercase tracking-wide leading-[0.85]">
+          <h2 className="font-heading text-5xl md:text-6xl font-extrabold text-primary uppercase tracking-wide leading-[0.85]" data-role="heading">
             Common<br />Questions
           </h2>
         </div>

@@ -64,12 +64,12 @@ export function Testimonials({
   if (variant === "single") {
     const t = testimonials[currentIndex];
     return (
-      <section className="bg-surface py-16 lg:py-24" id="testimonials">
+      <section className="bg-surface py-16 lg:py-24" id="testimonials" data-nocms-component="content/testimonials">
         <div className="mx-auto max-w-3xl px-4 text-center">
-          <h2 className="font-heading text-3xl font-bold text-text mb-10">{heading}</h2>
+          <h2 className="font-heading text-3xl font-bold text-text mb-10" data-role="heading">{heading}</h2>
           <Quote className="h-10 w-10 text-primary/20 mx-auto mb-6" aria-hidden="true" />
           <blockquote>
-            <p className="text-xl text-text leading-relaxed italic mb-6">
+            <p className="text-xl text-text leading-relaxed italic mb-6" data-role="subheading">
               &ldquo;{t.quote}&rdquo;
             </p>
             <footer>
@@ -171,7 +171,7 @@ export function Testimonials({
               </p>
               <div className="flex items-center gap-3">
                 {t.image && (
-                  <img src={t.image} alt={t.author} className="h-10 w-10 rounded-full object-cover" />
+                  <img src={t.image} alt={t.author} className="h-10 w-10 rounded-full object-cover" data-role="media" />
                 )}
                 <div>
                   <p className="font-semibold text-text text-sm">{t.author}</p>

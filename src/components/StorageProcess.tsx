@@ -26,7 +26,7 @@ const steps: Step[] = [
 
 export function StorageProcess() {
   return (
-    <section className="bg-surface py-24 px-6 relative overflow-hidden">
+    <section className="bg-surface py-24 px-6 relative overflow-hidden" data-nocms-component="storage-process">
       {/* diagonal slash accent */}
       <div
         className="absolute top-0 right-0 w-1/3 h-full opacity-5 pointer-events-none"
@@ -39,7 +39,7 @@ export function StorageProcess() {
           <span className="inline-flex items-center bg-accent text-background font-bold px-4 py-1.5 uppercase tracking-wider text-sm mb-4">
             Getting Started
           </span>
-          <h2 className="font-heading text-5xl md:text-7xl font-extrabold text-primary uppercase tracking-wide leading-[0.85]">
+          <h2 className="font-heading text-5xl md:text-7xl font-extrabold text-primary uppercase tracking-wide leading-[0.85]" data-role="heading">
             3 Easy<br />Steps
           </h2>
         </div>
@@ -62,7 +62,7 @@ export function StorageProcess() {
               <h3 className="font-heading text-2xl font-extrabold text-text uppercase tracking-wide mb-4 mt-2">
                 {step.title}
               </h3>
-              <p className="text-muted text-base leading-relaxed font-body">{step.description}</p>
+              <p className="text-muted text-base leading-relaxed font-body" data-role="subheading">{step.description}</p>
 
               {i < steps.length - 1 && (
                 <div className="hidden md:block absolute -right-px top-1/2 -translate-y-1/2 w-px h-1/2 bg-primary/20" aria-hidden="true" />
